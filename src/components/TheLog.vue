@@ -51,7 +51,7 @@ import QuestionIcon from './icons/IconQuestion.vue'
       <HouseIcon />
     </template>
     <template #heading>
-      <h3 class="me-2 text-success-emphasis">22 Sep</h3>
+      <h3 class="me-2 text-success-emphasis">22 - 23 Sep</h3>
       <h3>Cd. de México</h3>
     </template>
     <template #img-url></template>
@@ -67,7 +67,9 @@ import QuestionIcon from './icons/IconQuestion.vue'
           <i class="me-2 icon-color-pink air-land">
             <AirplaneIcon />
           </i>
-          Aterrizaje a Cd. de México: &nbsp;<span class="text-info-emphasis">23:05</span>
+          Aterrizaje a Cd. de México:
+          &nbsp;<span class="text-warning-emphasis">22 Sep</span>
+          &nbsp;@<span class="text-info-emphasis">23:05</span>
         </li>
         <li class="list-group-item list-group-item-action d-flex align-items-center">
           <i class="me-2 icon-color-indigo">
@@ -86,9 +88,9 @@ import QuestionIcon from './icons/IconQuestion.vue'
             <AirplaneIcon />
           </i>
           Vuelo a Madrid:
+          &nbsp;<span class="text-warning-emphasis">23 Sep</span>
+          &nbsp;@
           &nbsp;<span class="text-info-emphasis">23:45</span>
-          &nbsp; | &nbsp;
-          <span class="text-warning-emphasis">Terminal 1</span>
         </li>
       </ul>
     </template>
@@ -567,11 +569,3 @@ import QuestionIcon from './icons/IconQuestion.vue'
   color: var(--vt-cl-pink)
 }
 </style>
-
-/*
---vt-cl-teal:rgb(115, 228, 190);
---vt-cl-yellow: rgb(231, 231, 116);
---vt-cl-red: rgb(240, 109, 109);
---vt-cl-blue: rgb(109, 166, 231);
---vt-cl-indigo: rgb(138, 88, 240);
-*/

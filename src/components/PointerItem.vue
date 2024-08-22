@@ -3,10 +3,10 @@
 </script>
 
 <template>
-<div class="card shadow-sm specific-w-300 w-sm-100 mw-75 h-100 mx-auto m-5">
+<div class="card shadow-sm w-sm-100 mw-75 mx-auto m-5">
   <!-- <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" :alt="`${props.img}`"> -->
   <div class="card-body">
-    <div class="card-title d-md-flex">
+    <div class="card-title d-flex">
       <slot name="heading"></slot>
     </div>
     <div class="card-text">
@@ -34,6 +34,16 @@ i {
   height: 32px;
 
   color: var(--color-text);
+}
+
+@media (min-width: 400px) {
+  .card {
+    font-size: small;
+  }
+
+  .card-body {
+    padding: 2svb;
+  }
 }
 
 @media (min-width: 1024px) {
