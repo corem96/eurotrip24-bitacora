@@ -1,12 +1,10 @@
 <script setup lang="ts">
 const props = defineProps<{img: string}>()
-
-
 </script>
 
 <template>
-<div class="card shadow-sm specific-w-300 w-sm-100 mw-100 h-100 mx-auto m-5">
-  <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" alt="chihuahua-city-map">
+<div class="card shadow-sm specific-w-300 w-sm-100 mw-75 h-100 mx-auto m-5">
+  <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" :alt="`${props.img}`">
   <div class="card-body">
     <div class="card-title d-md-flex">
       <slot name="heading"></slot>
@@ -19,26 +17,6 @@ const props = defineProps<{img: string}>()
     <a href="#">Detalles</a>
   </div>
 </div>
-  
-  <!-- <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="card">
-      <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" alt="chihuahua-city-map">
-      <div class="card-body">
-        <h5 class="card-title mb-1">
-          <slot name="heading"></slot>
-        </h5>
-
-        <div class="card-body">
-          <slot class="card-text">
-            <slot name="data-list"></slot>
-          </slot>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <style scoped>

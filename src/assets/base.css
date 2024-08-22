@@ -9,6 +9,12 @@
   --vt-c-black-mute: #282828;
 
   --vt-c-indigo: #2c3e50;
+  --vt-cl-teal:rgb(115, 228, 190);
+  --vt-cl-yellow: rgb(231, 231, 116);
+  --vt-cl-red: rgb(240, 109, 109);
+  --vt-cl-blue: rgb(108, 173, 247);
+  --vt-cl-indigo: rgb(157, 116, 238);
+  --vt-cl-pink: rgb(228, 109, 174);
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
