@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheLog from '../components/TheLog.vue'
+import HeroWall from '@/components/HeroWall.vue'
 </script>
 
 <template>
   <main>
-    <TheLog />
+    <HeroWall />
   </main>
 </template>

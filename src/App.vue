@@ -1,30 +1,15 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
+import NavBar from '@/components/NavBar.vue'
 import 'halfmoon/css/halfmoon.min.css'
 </script>
 
 <template>
-  <HelloWorld />
+  <header class="mb-auto">
+    <NavBar />
+  </header>
 
-  <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
-
-  <RouterView />
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <RouterView />
+  </main>
 </template>
-
-<style scoped>
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
-</style>
