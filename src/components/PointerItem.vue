@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const props = defineProps<{img: string}>()
+// const props = defineProps<{img: string}>()
 </script>
 
 <template>
 <div class="card shadow-sm specific-w-300 w-sm-100 mw-75 h-100 mx-auto m-5">
-  <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" :alt="`${props.img}`">
+  <!-- <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" :alt="`${props.img}`"> -->
   <div class="card-body">
     <div class="card-title d-md-flex">
       <slot name="heading"></slot>
