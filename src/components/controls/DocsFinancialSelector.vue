@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { supabase } from '@/lib/SupabaseClient'
 
@@ -27,7 +27,7 @@ onMounted(() => {
     <label for="docs-selector" class="form-label">Docs & Finanzas</label>
     <select class="form-select" id="docs-selector">
       <option selected>Select an option</option>
-      <option v-for="doc in docsFinantial" :key="doc.id" :value="doc.id">
+      <option v-for="doc in docsFinancial" :key="doc.id" :value="doc.id">
         {{ doc.item_name }}
       </option>
     </select>
