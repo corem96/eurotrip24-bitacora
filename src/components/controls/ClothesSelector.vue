@@ -26,10 +26,14 @@ onMounted(() => {
   <div class="mb-3">
     <label for="clothes-selector" class="form-label">Ropa</label>
     <select class="form-select" id="clothes-selector">
-      <option selected>Select an option</option>
+      <option selected>selecciona...</option>
       <option v-for="cloth in clothes" :key="cloth.id" :value="cloth.id">
         {{ cloth.item_name }}
       </option>
     </select>
+
+    <div class="mt-1">
+      <button type="button" class="btn btn-primary ms-auto">Agregar</button>
+    </div>
   </div>
 </template>

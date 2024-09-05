@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import GeoIcon from './icons/IconGeo.vue'
 import HouseIcon from './icons/IconHouse.vue'
 import PointerItem from './PointerItem.vue'
@@ -73,7 +74,7 @@ import QuestionIcon from './icons/IconQuestion.vue'
           <i class="me-2 icon-color-indigo">
             <BuildingIcon />
           </i>
-          Hospedaje: &nbsp;<span class="bg-danger">PENDIENTE</span>
+          Hospedaje: &nbsp;<span class="text-indigo-emphasis">Cadillac Hotel Boutique</span>
         </li>
         <li class="list-group-item list-group-item-action d-flex align-items-center">
           <i class="me-2 icon-color-teal">
@@ -91,6 +92,11 @@ import QuestionIcon from './icons/IconQuestion.vue'
           &nbsp;<span class="text-info-emphasis">23:45</span>
         </li>
       </ul>
+    </template>
+    <template #city>
+      <RouterLink to='/mexico' type="button" class="btn btn-outline-success">
+        Detalles
+      </RouterLink>
     </template>
   </PointerItem>
 
@@ -441,7 +447,7 @@ import QuestionIcon from './icons/IconQuestion.vue'
       </ul>
     </template>
   </PointerItem>
-  
+
   <PointerItem :img="'budapest-city-map.jpg'">
     <template #icon>
       <EcosystemIcon />
@@ -565,5 +571,9 @@ import QuestionIcon from './icons/IconQuestion.vue'
 
 .icon-color-pink {
   color: var(--vt-cl-pink)
+}
+
+.text-indigo-emphasis {
+  color: var(--vt-cl-indigo)
 }
 </style>

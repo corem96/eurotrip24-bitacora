@@ -1,22 +1,27 @@
 <script setup lang="ts">
-// const props = defineProps<{img: string}>()
+
+type Pointer = {
+  img: string
+}
+
+const props = defineProps<Pointer>()
 </script>
 
 <template>
-<div class="card shadow-sm w-sm-100 mw-75 mx-auto m-5">
-  <!-- <img :src="`../src/assets/img/${ props.img }`" class="card-img-top" :alt="`${props.img}`"> -->
-  <div class="card-body">
-    <div class="card-title d-flex">
-      <slot name="heading"></slot>
+  <div class="card shadow-sm w-sm-50 mw-75 mx-auto m-5">
+    <img :src="`../src/assets/img/${props.img}`" class="card-img-top" :alt="`${props.img}`">
+    <div class="card-body">
+      <div class="card-title d-flex">
+        <slot name="heading"></slot>
+      </div>
+      <div class="card-text">
+        <slot name="data-list"></slot>
+      </div>
     </div>
-    <div class="card-text">
-      <slot name="data-list"></slot>
+    <div class="card-footer">
+      <slot name="city"></slot>
     </div>
   </div>
-  <div class="card-footer">
-    <a href="#">Detalles</a>
-  </div>
-</div>
 </template>
 
 <style scoped>
